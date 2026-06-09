@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "./components/Navbar";
+import ChatAgent from "./components/ChatAgent";
 
 export const metadata: Metadata = {
   title: "Amoor Consulting Group | Sales & Leadership Organization",
@@ -18,6 +19,7 @@ export default function RootLayout({
       <body>
         <Navbar />
         {children}
+        <ChatAgent />
       </body>
     </html>
   );
